@@ -23,9 +23,35 @@ header {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 .hero {
@@ -51,6 +77,8 @@ header {
 
 .features {
     padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feature-grid {
@@ -64,6 +92,38 @@ header {
     padding: 2rem;
     background-color: var(--light-bg);
     border-radius: 5px;
+}
+
+.services {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.service-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.service-card li {
+    margin-bottom: 0.5rem;
 }
 
 .contact {
@@ -91,5 +151,9 @@ footer {
 
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
     }
 }
